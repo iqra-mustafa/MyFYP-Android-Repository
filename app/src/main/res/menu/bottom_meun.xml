@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/Home_Item"
+            android:icon="@drawable/icon_home"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/Gallary"
+            android:icon="@drawable/icon_gallary"
+            android:title="Gallary" />
+        <item
+            android:id="@+id/Location"
+            android:icon="@drawable/icon_location"
+            android:title="Location" />
+        <item
+            android:id="@+id/More_Item"
+            android:icon="@drawable/icon_more"
+            android:title="More" />
+
+</menu>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.First_Screen">
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carousal"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:fillColor="@color/white"
+        app:pageColor="@color/black"
+        app:radius="10dp"
+        app:strokeWidth="1dp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="70dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="0sp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logoqalammovement" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:fontFamily="@font/chela_one"
+            android:gravity="center"
+            android:text="QalamMovement"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/donate_now"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/gradient"
+            android:fontFamily="@font/capriola"
+            android:text="@string/donate_name"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/medium_yellow"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/join_us"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.678"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/join_us"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/gradient"
+            android:fontFamily="@font/capriola"
+            android:text="Join Us"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/medium_yellow"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.678"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/donate_now" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login"
+            android:layout_width="71dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:background="#00000000"
+            android:fontFamily="@font/antic"
+            android:text="Log In?"
+            android:textAllCaps="false"
+            android:textColor="@color/medium_yellow"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.705"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/join_us" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:fontFamily="@font/antic"
+            android:text="Already Registered"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/login"
+            app:layout_constraintEnd_toStartOf="@+id/login"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="120dp">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/antic"
+                android:text="Do you need help?"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/chatbot"
+                android:layout_width="62dp"
+                android:layout_height="26dp"
+                android:background="#00000000"
+                android:fontFamily="@font/antic"
+                android:text="Ask Me"
+                android:textAllCaps="false"
+                android:textColor="@color/medium_yellow"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

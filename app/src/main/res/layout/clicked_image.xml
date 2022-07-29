@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/image_fullscreen"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher_round"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Full_Button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/image_fullscreen"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/gradient"
+        android:fontFamily="@font/capriola"
+        android:text="Full View"
+        android:textAllCaps="false"
+        android:textColor="@color/medium_yellow"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Cancel_Button"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/image_fullscreen"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/Full_Button"
+        android:background="@drawable/gradient"
+        android:fontFamily="@font/capriola"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/medium_yellow"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

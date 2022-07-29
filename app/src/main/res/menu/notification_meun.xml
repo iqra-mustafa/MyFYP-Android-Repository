@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation-view">
+
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/notifications_icon"
+            android:title="Notification"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/refresh"
+            android:icon="@drawable/icon_refresh"
+            android:title="refresh"
+            app:showAsAction="ifRoom"/>
+</menu>

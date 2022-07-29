@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.qalammovement">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QalamMovement"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Activity.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CreateAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.StudentAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.EmergencyRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.EmergencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.StationaryRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SchoolTeam"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TeamListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SchoolListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.VolunteerListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.StudentListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AddComplaint"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Attandence"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.StudentRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DailyReport"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Chatbot"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Full_ScreenImage"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Location"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Dashboard"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".Activity.Signup"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.LogIn"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.First_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDcgp-y76Mc-DPogm34V1yE4B4G3NNpRds" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
